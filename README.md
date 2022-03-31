@@ -1,6 +1,8 @@
 # ToggleCover [EN]
 Acrobat script for Acrobat Pro or Acrobat Reader to toggle easily between different views, with or without the cover page, in the frontmost PDF.
 
+Visit the corresponding blog post here (available only in German): https://wantzen.com/blog/arcobat-script-togglecover-umschalten-der-seitenanzeige/
+
 ## How to use
 The script can be integrated into the quick toolbar, called up via the additional tools, or accessed via the "view" menu: "Two page view: Toggle Cover Page View".
 
@@ -31,6 +33,8 @@ However, the "user" folder is shared by both Acrobat and Reader Placing the file
 
 # ToggleCover [DE]
 Ein Acrobat-Skript für Acrobat Pro oder den Acrobat Reader, mit dem Sie einfach zwischen verschiedenen Ansichten – mit und ohne Cover – im aktiven PDF wechseln können.
+
+Besuchen Sie den dazugehörenden Blog-Beitrag: https://wantzen.com/blog/arcobat-script-togglecover-umschalten-der-seitenanzeige/
 
 ## Anwendung
 Das Script lässt sich in die Schnellwerkzeug-Leiste integrieren, über die Zusatzwerkzeuge aufrufen oder über das "Anzeige"-Menü ansteuern: "Zweiseitenansicht: Deckblatt umschalten".
