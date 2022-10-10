@@ -16,19 +16,36 @@ The script switches the page view according to the following logic:
 |All other views|Two Page View *and* Show Cover Page|
 
 ## General installation instructions
-This Acrobat Automation Script will only work when placed in one of the Acrobat JavaScript Folders. Execute the following code from the Acrobat JavaScript Console to find the location of the JavaScript folders.
+This Acrobat script will only work when placed in one of the Acrobat JavaScript folders.
 
-To display the Acrobat JavaScript Console use Ctrl+J on Windows and Command+J on the Mac, does not work properly on newer Mac Books
+*For Windows:*
+
+* Place the script file "ToggleCover.js" in this folder (or the same folder in the full version):\
+  `C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\Javascripts\`
+* Restart Acrobat.
+
+*For Mac:*
+
+* In Finder, go to your Acrobat.app in the Applications folder.
+* Right-click on the Acrobat.app and select "View Package Contents" to view the inside of the app package.
+* Inside the app navigate to this directory:\
+  `Acrobat.app/Contents/Resources/JavaScripts/`
+* Place the script file "ToggleCover.js" there.
+* Restart Acrobat.
+
+If this does not work, you can find out the directory on your computer as follows:
+
+* Key Ctrl+J (Windows) or Cmd+J (Mac) to bring up the console.
+* Type *one* of the following lines and confirm with Ctrl+Return (Windows) or Command+Return (Mac) or the Enter key of the number pad:
 
 ```javascript
 app.getPath("app","javascript");
 app.getPath("user");
 ```
-You may have to add a new folder called "JavaScripts" to the user folder manually.
+This way you will know under which path you can place the script on your computer. In the user folder you may have to create the folder "JavaScripts".
 
-You may place this script file in either one of the folders: Use the "application" folder to install the script for all users, and user the "user" folder to install the script for the user only.
+The "user" folder is shared by Acrobat and Acrobat Reader. Scripts installed there are only available to the user. If they are installed in the "application" folder, the scripts are available to all users.
 
-However, the "user" folder is shared by both Acrobat and Reader Placing the file in the user folder will make the menu item availible to both Acrobat and Reader.
 
 
 # ToggleCover [DE]
@@ -49,10 +66,27 @@ Das Script schaltet die Seitenansicht nach folgender Logik um:
 |Alle anderen Ansichten|Zweiseitenansicht mit Deckblatt|
 
 ## Installationsanleitung
-Das Script funktioniert nur, wenn Sie es in einem der Acrobat-JavaScript-Ordner platzieren.
+Das Script funktioniert nur, wenn Sie es in einem der Acrobat-JavaScript-Ordner platzieren:
 
-* Tasten Sie Ctrl-J (Windows) bzw. Cmd-J (Mac), um die Konsole aufzurufen.
-* Tippen Sie eine der folgenden Zeilen ein und bestätigen Sie mit Shift-Return oder der Enter-Taste des Nummernfelds:
+*Für Windows:*
+
+* Legen Sie die Scriptdatei "ToggleCover.js" in diesen (bzw. in der Vollversion gleichlautenden) Ordner:\
+  `C:\Programme (x86)\Adobe\Acrobat Reader DC\Reader\Javascripts\`
+* Starten Sie Acrobat neu.
+
+*Für Mac:*
+
+* Gehen Sie im Finder zu Ihrer Acrobat.app im Programme-Ordner.
+* Klicken Sie mit der rechten Maustaste auf die Acrobat.app und wählen Sie »Paketinhalt anzeigen«, um das Innere der Applikation anzuzeigen.
+* Navigieren Sie innerhalb der App in das Verzeichnis:\
+  `Acrobat.app/Contents/Resources/JavaScripts/`
+* Platzieren Sie die Scriptdatei "ToggleCover.js" dort
+* Starten Sie Acrobat neu.
+
+Sollte das nicht funktionieren, können Sie das Verzeichnis auf Ihrem Rechner wie folgt ermitteln:
+
+* Tasten Sie Ctrl+J (Windows) bzw. Cmd+J (Mac), um die Konsole aufzurufen.
+* Tippen Sie *eine* der folgenden Zeilen ein und bestätigen Sie mit Strg+Return (Windows) bzw. Befehl+Return (Mac) oder der Enter-Taste des Nummernfelds:
 
 ```javascript
 app.getPath("app","javascript");
@@ -60,4 +94,4 @@ app.getPath("user");
 ```
 Auf diese Weise erfahren Sie, unter welchem Pfad Sie das Script auf Ihrem Rechner ablegen können. Im user-Ordner müssen Sie evtl. den Ordner „JavaScripts“ noch neu anlegen.
 
-Den »user«-Ordner teilen sich übrigens Acrobat und Acrobat Reader. Dort installierte Skripte stehen ausschließlich dem User selbst zur Verfügung. Bei einer Installation im »application«-Ordner stehen die Skripte allen Usern zur Verfügung.
+Den »user«-Ordner teilen sich übrigens Acrobat und Acrobat Reader. Dort installierte Scripte stehen ausschließlich dem User selbst zur Verfügung. Bei einer Installation im »application«-Ordner stehen die Scripte allen Usern zur Verfügung.
